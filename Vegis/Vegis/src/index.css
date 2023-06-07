@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bgImage {
+  background-image: url(https://images.squarespace-cdn.com/content/v1/62beadc429579b663bb52d39/1656663499680-PHAUTSS7RRVJBAY77HBC/cabbage.jpeg?format=1000w);
+  max-width: 100%;
+  height: 45rem;
+}
+
+.bgImage2 {
+  background-image: url(https://images.squarespace-cdn.com/content/v1/62beadc429579b663bb52d39/1656663499680-PHAUTSS7RRVJBAY77HBC/cabbage.jpeg?format=1000w);
+  max-width: 100%;
+  height: auto;
+}
+
+.vegis {
+  width: 23rem;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-container img {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.image-container:hover img {
+  opacity: 0;
+}
+
+.image-container .hover-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.image-container:hover .hover-image {
+  opacity: 1;
+}
