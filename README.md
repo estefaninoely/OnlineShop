@@ -3,6 +3,9 @@
 
 Produts to sell and ofer a clear and nice experience to the user. 
 
-Nav bar <strong> home, About us, Store, ShoopingCard </strong> 
+- Nav bar <strong> home, About us, Store, ShoopingCard </strong> 
+- Pages: Home, Store, Details, payment .. 
+- components 
+- desing 
 
 ....in process🏗️
