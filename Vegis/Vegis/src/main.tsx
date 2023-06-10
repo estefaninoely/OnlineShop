@@ -3,9 +3,9 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./pages/Home";
-
-import Example from "./pages/Example";
 import Store from "./pages/Store";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import Details from "./pages/Details";
 
 export const router = createBrowserRouter([
   {
@@ -13,17 +13,20 @@ export const router = createBrowserRouter([
     element: <Home />,
   },
   {
-    path: "/tienda",
+    path: "/store",
     element: <Store />,
   },
   {
-    path: "/example",
-    element: <Example />,
+    path: "/example/:productId",
+    element: <Details />,
   },
 ]);
+const queryClient = new QueryClient();
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
-  <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>
+  <QueryClientProvider client={queryClient}>
+    <React.StrictMode>
+      <RouterProvider router={router} />
+    </React.StrictMode>
+  </QueryClientProvider>
 );
