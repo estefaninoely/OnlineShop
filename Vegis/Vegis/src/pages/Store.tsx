@@ -15,7 +15,7 @@ function Store() {
       <div className="grid grid-cols-3 text-center pt-20 pb-20">
         {Products.map((product) => (
           <div key={product.id}>
-            <Link to={`/example/${product.id}`} key={product.id}>
+            <Link to={`/details/${product.id}`} key={product.id}>
               <div className="image-container">
                 <img src={product.image} alt="" />
                 <img
