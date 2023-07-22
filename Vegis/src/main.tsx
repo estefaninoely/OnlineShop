@@ -7,7 +7,10 @@ import Store from "./pages/Store";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import Details from "./pages/Details";
 
-import Shop from "./pages/shop";
+import Payment from "./pages/Payment";
+import Shop from "./pages/Shop";
+import Blog from "./pages/Blog";
+import BlogPost from "./pages/BlogPost";
 
 export const router = createBrowserRouter([
   {
@@ -25,6 +28,18 @@ export const router = createBrowserRouter([
   {
     path: "/shopping",
     element: <Shop />,
+  },
+  {
+    path: "/payment",
+    element: <Payment />,
+  },
+  {
+    path: "/blog",
+    element: <Blog />,
+  },
+  {
+    path: "/blog/:blogTitle",
+    element: <BlogPost />,
   },
 ]);
 const queryClient = new QueryClient();

@@ -6,7 +6,7 @@ export default function shop() {
     <>
       <section>
         <Navbar />
-        <h1>My shopping cart</h1>
+        <h1 className="ml-8 title pt-8">Shopping cart</h1>
         <Shopping />
       </section>
     </>

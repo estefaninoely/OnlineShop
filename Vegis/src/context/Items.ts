@@ -39,7 +39,7 @@ export const Products = [
   },
   {
     id: 2,
-    title: "Lemons",
+    title: "Kimchi",
     image:
       "https://images.squarespace-cdn.com/content/v1/62beadc429579b663bb52d39/1656663493015-AMAUXMR884X617CZTUQV/download+%288%29.jpeg?format=2500w",
     second_image:
@@ -52,7 +52,7 @@ export const Products = [
   },
   {
     id: 5,
-    title: "Kimchi",
+    title: "Lemons",
     image:
       "https://images.squarespace-cdn.com/content/v1/5a66088807fc7b1b7a7292c8/1516636323413-QF4LTGMQTVRRK2B0GV6E/image-asset.jpeg?format=1500w",
     second_image:
